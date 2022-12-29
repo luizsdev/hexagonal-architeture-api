@@ -1,0 +1,45 @@
+{
+	"env": {
+		"es2021": true,
+		"node": true,
+		"jest": true
+	},
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"overrides": [
+		{
+			"files": ["**/*.test.ts", "**/*.test.js"]
+		}
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"no-mixed-spaces-and-tabs": 0,
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"@typescript-eslint/no-var-requires": 0,
+		"require-yield": "off",
+		"newline-after-var": "error",
+		"newline-before-return": "error",
+		"lines-between-class-members": "error",
+		"padded-blocks": [
+			"error",
+			{ "classes": "always", "blocks": "never", "switches": "never" },
+			{ "allowSingleLineBlocks": true }
+		],
+		"padding-line-between-statements": [
+			"error",
+			{ "blankLine": "never", "prev": "import", "next": "import" },
+			{
+				"blankLine": "never",
+				"prev": ["let", "var", "const"],
+				"next": ["let", "var", "const"]
+			}
+		]
+	}
+}

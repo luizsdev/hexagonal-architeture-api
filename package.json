@@ -1,11 +1,34 @@
 {
-  "name": "hexagonal-architeture-api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:luizsdev/hexagonal-architeture-api.git",
-  "author": "luizsdev <luizsdev@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "prisma": "^4.8.0"
-  }
+	"name": "hexagonal-architeture-api",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:luizsdev/hexagonal-architeture-api.git",
+	"author": "luizsdev <luizsdev@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.47.1",
+		"@typescript-eslint/parser": "^5.47.1",
+		"eslint": "^8.0.1",
+		"eslint-config-standard-with-typescript": "^24.0.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-n": "^15.0.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-promise": "^6.0.0",
+		"prisma": "^4.8.0",
+		"ts-node-dev": "^2.0.0"
+	},
+	"scripts": {
+		"eslint": "eslint ./ --fix",
+		"dev": "ts-node-dev ./src/main/bootstrap.ts",
+		"build": "tsc",
+		"start": "node ./dist/main/bootstrap.js"
+	},
+	"dependencies": {
+		"@prisma/client": "^4.8.0",
+		"@types/express": "^4.17.15",
+		"express": "^4.18.2",
+		"ioredis": "^5.2.4",
+		"redis": "^4.5.1",
+		"typescript": "*"
+	}
 }
