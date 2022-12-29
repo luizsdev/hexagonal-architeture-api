@@ -1,0 +1,8 @@
+{
+  "name": "hexagonal-architeture-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:luizsdev/hexagonal-architeture-api.git",
+  "author": "luizsdev <luizsdev@gmail.com>",
+  "license": "MIT"
+}
