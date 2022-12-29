@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:luizsdev/hexagonal-architeture-api.git",
   "author": "luizsdev <luizsdev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^4.8.0"
+  }
 }
