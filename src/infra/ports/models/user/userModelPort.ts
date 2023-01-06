@@ -1,4 +1,4 @@
-import { User } from '../../../../entities/userEntity';
+import { User } from '../../../entities/userEntity';
 
 export interface UserModelPort {
 	create(user: User): Promise<User>;
